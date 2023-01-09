@@ -1,0 +1,87 @@
+.block__nav p {
+  margin-left: 20px;
+}
+.info p {
+  margin-bottom: 13px;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 33px 20px 0;
+}
+.block {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid black;
+  /* margin-bottom: 100px; */
+}
+.info div {
+  margin-right: 15px;
+}
+.map {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  margin: 50px 0;
+  background-color: rgb(99, 99, 99);
+}
+
+.block__photo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 3px 6px 2px gray;
+  padding-bottom: 50px;
+  /* margin: 50px 0;  */
+}
+.block__video video {
+  width: 100%;
+}
+
+#phone {
+  border-radius: 50%;
+  box-shadow: 0 3px 3px 4px gray;
+  width: 80px;
+  height: 80px;
+  background-image: url(https://img.freepik.com/premium-vector/phone-call-icon-isolated-white-background-telephone-symbol-vector-illustration_548264-469.jpg?w=2000);
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 15px;
+}
+#time {
+  border-radius: 50%;
+  box-shadow: 0 3px 3px 4px gray;
+  width: 80px;
+  height: 80px;
+  background-image: url(https://www.iconpacks.net/icons/1/free-time-icon-968-thumb.png);
+  background-position: center;
+  background-size: 90%;
+  margin-bottom: 15px;
+}
+#home {
+  border-radius: 50%;
+  box-shadow: 0 3px 3px 4px gray;
+  width: 80px;
+  height: 80px;
+  background-image: url(https://i.pinimg.com/originals/b3/cc/d5/b3ccd57b054a73af1a0d281265b54ec8.jpg);
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 15px;
+}
+
+/* #phone:hover{
+    box-shadow: 0 3px 3px 4px gray;
+    transition: 0.5s;
+
+}
+#home:hover{
+    box-shadow: 0 3px 3px 4px gray;
+    transition: 0.5s;
+
+}
+#time:hover{
+    box-shadow: 0 3px 3px 4px gray;
+    transition: 0.5s;
+
+} */
