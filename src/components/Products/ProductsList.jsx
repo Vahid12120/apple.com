@@ -33,7 +33,7 @@ const ProductsList = () => {
   return (
     <Grid
       item
-      md={9}
+      md={8}
       sx={{ justifyContent: "center", display: "flex", flexWrap: "wrap" }}
     >
       <Box

@@ -1,0 +1,35 @@
+.css-hyum1k-MuiToolbar-root{
+    color: white;
+    background-color: black;
+
+}
+
+
+
+.css-jb1ygz-MuiTypography-root{
+  margin-left: 50px;
+}
+.css-1futezt-MuiTypography-root{
+    margin-left: 100px;
+}
+
+@media all and (max-width: 2000px){
+    .nav-links {
+        display: block;
+    }
+}
+
+@media all and (max-width:900px){
+.nav-links {
+    display: none;
+}
+}
+.css-1hx64p0-MuiPaper-root{
+    border: 1px solid black !important;
+    border-radius: 45px !important;
+    width: 100%;
+    
+
+}
+
+
