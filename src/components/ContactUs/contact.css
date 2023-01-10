@@ -24,7 +24,7 @@
   justify-content: center;
   padding: 50px 0;
   margin: 50px 0;
-  background-color: rgb(99, 99, 99);
+  background-color: rgb(249, 246, 246);
 }
 
 .block__photo {
@@ -69,19 +69,3 @@
   background-size: 100%;
   margin-bottom: 15px;
 }
-
-/* #phone:hover{
-    box-shadow: 0 3px 3px 4px gray;
-    transition: 0.5s;
-
-}
-#home:hover{
-    box-shadow: 0 3px 3px 4px gray;
-    transition: 0.5s;
-
-}
-#time:hover{
-    box-shadow: 0 3px 3px 4px gray;
-    transition: 0.5s;
-
-} */

@@ -1,14 +1,43 @@
-.musa{
-    background-image: url(https://media.viez.vn/prod/2022/8/28/appleevent_sep14keynote_tim_cook_01_1d49030ee9.webp);
-    background-size: 100% ;
-    background-repeat: no-repeat;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    
-    
-    
+.img {
+  background-image: url(https://media.viez.vn/prod/2022/8/28/appleevent_sep14keynote_tim_cook_01_1d49030ee9.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
 }
 
+#text {
+  display: flex;
+  justify-content: center;
+}
+
+#apple {
+  border-radius: 50%;
+
+  width: 100px;
+  height: 100px;
+  background-image: url(https://www.pngplay.com/wp-content/uploads/3/IPhone-Apple-Logo-Transparent-File.png);
+  background-position: center;
+  background-size: 100%;
+  margin-top: 3px;
+}
+
+#full-block {
+  background-color: white;
+}
+.block {
+  background-image: url();
+}
+#text-2 {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+.info {
+  margin-top: 40px;
+}

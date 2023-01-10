@@ -1,5 +1,5 @@
 import * as React from "react";
-import "./navbar.css"
+import "./navbar.css";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -25,7 +25,7 @@ import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 import { DarkMode } from "@mui/icons-material";
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit", 
+  color: "inherit",
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
 
@@ -38,7 +38,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const pages =  [
+const pages = [
   { name: "О нас", link: "/about", id: 1 },
   { name: "Наши контакты", link: "/contacts", id: 2 },
   { name: "Продукты", link: "/products", id: 3 },
@@ -112,23 +112,23 @@ export default function Navbar() {
       </MenuItem>
     </Menu>
   );
-  
+
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <Menu
-    anchorEl={mobileMoreAnchorEl}
-    anchorOrigin={{
-      vertical: "top",
-      horizontal: "right",
-    }}
-    id={mobileMenuId}
-    keepMounted
-    transformOrigin={{
-      vertical: "top",
-      horizontal: "right",
-    }}
-    open={isMobileMenuOpen}
-    onClose={handleMobileMenuClose}
+      anchorEl={mobileMoreAnchorEl}
+      anchorOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      id={mobileMenuId}
+      keepMounted
+      transformOrigin={{
+        vertical: "top",
+        horizontal: "right",
+      }}
+      open={isMobileMenuOpen}
+      onClose={handleMobileMenuClose}
     >
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -164,13 +164,11 @@ export default function Navbar() {
       </MenuItem>
     </Menu>
   );
-  
-   return (
 
+  return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-      
           <IconButton
             size="large"
             edge="start"
@@ -181,7 +179,6 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography
-          
             variant="h6"
             noWrap
             component="div"

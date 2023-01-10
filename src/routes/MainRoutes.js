@@ -10,7 +10,6 @@ import AuthPage from "../pages/AuthPage";
 import CartPage from "../pages/CartPage";
 import ContactsPage from "../pages/ContactsPage";
 import EditProductPage from "../pages/EditProductPage";
-import HomePage from "../pages/HomePage";
 import NotFoundPage from "../pages/NotFoundPage";
 import ProductDetailsPage from "../pages/ProductDetailsPage";
 import ProductsPage from "../pages/ProductsPage";
@@ -20,7 +19,7 @@ const MainRoutes = () => {
   const PUBLIC_ROUTES = [
     {
       link: "/",
-      element: <HomePage />,
+      element: <AboutUs />,
       id: 1,
     },
     {
@@ -39,29 +38,24 @@ const MainRoutes = () => {
       id: 4,
     },
     {
-      link: "/About",
-      element: <AboutUs />,
-      id: 5,
-    },
-    {
       link: "/products/:id",
       element: <ProductDetailsPage />,
-      id: 6,
+      id: 5,
     },
     {
       link: "/cart",
       element: <CartPage />,
-      id: 7,
+      id: 6,
     },
     {
       link: "/contacts",
       element: <ContactsPage />,
-      id: 8,
+      id: 7,
     },
     {
       link: "/cartt",
       element: <PaymentForm />,
-      id: 9,
+      id: 8,
     },
   ];
 

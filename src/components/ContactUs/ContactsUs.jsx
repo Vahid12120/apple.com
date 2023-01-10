@@ -52,7 +52,7 @@ const ContactsUs = () => {
       <div className="block">
         <div className="info">
           <div id="phone"></div>
-          <p style={{ fontWeight: 600, fontSize: "18px" }}>Смартфоны</p>
+          <p style={{ fontWeight: 600, fontSize: "18px" }}>Смартфоны:\</p>
           <p style={{ color: "gray" }}>+(996) 706891054; 559891054</p>
           <p style={{ fontWeight: 600, fontSize: "18px" }}>
             Компьютеры и часы :

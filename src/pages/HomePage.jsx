@@ -1,8 +1,8 @@
-import { Home } from "@mui/icons-material";
+// import { Home } from "@mui/icons-material";
 
 const HomePage = () => {
   return (
-    Home
+    <div>Home</div>
   )
 };
 
