@@ -24,9 +24,9 @@ export default function ProductCard({ item }) {
   } = useAuth();
 
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 340,  border: "1px solid black", borderRadius:  8 }}>
       <CardMedia
-        sx={{ height: 140, cursor: "pointer" }}
+        sx={{ height: 200, cursor: "pointer" }}
         image={item.picture}
         title="green iguana"
         onClick={() => navigate(`/products/${item.id}`)}
