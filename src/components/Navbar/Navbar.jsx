@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./navbar.css";
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -21,6 +22,7 @@ import { ADMIN } from "../../helpers/consts";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { useCart } from "../../contexts/cartContext";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
+import { DarkMode } from "@mui/icons-material";
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
   color: "inherit",
@@ -37,9 +39,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const pages = [
-  { name: "ABOUT US", link: "/about", id: 1 },
-  { name: "CONTACT US", link: "/contacts", id: 2 },
-  { name: "PRODUCTS", link: "/products", id: 3 },
+  { name: "О нас", link: "/about", id: 1 },
+  { name: "Наши контакты", link: "/contacts", id: 2 },
+  { name: "Продукты", link: "/products", id: 3 },
 ];
 
 export default function Navbar() {
@@ -184,6 +186,10 @@ export default function Navbar() {
           >
             Apple store
           </Typography>
+          <img
+            width={50}
+            src="https://dujio.com/wp-content/uploads/2019/01/Apple-White-Logo.png"
+          />
 
           {user.email == ADMIN ? (
             <Link
@@ -197,9 +203,10 @@ export default function Navbar() {
               <SupervisorAccountIcon />
             </Link>
           ) : null}
-          <Box sx={{ display: "flex", gap: "6px" }}>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box className="nav-links" sx={{ display: "flex", gap: "6px" }}>
             {pages.map((item) => (
-              <Link to={item.link}>
+              <Link className="nav-links" to={item.link}>
                 <Typography sx={{ color: "white" }}>{item.name}</Typography>
               </Link>
             ))}

@@ -1,64 +1,43 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap");
-
-.div {
+.img {
+  background-image: url(https://media.viez.vn/prod/2022/8/28/appleevent_sep14keynote_tim_cook_01_1d49030ee9.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 200vh;
-  margin: auto;
-  padding: 100px;
-  background-color: rgb(0, 0, 0, 0.5);
-  font-family: "Caveat", cursive;
+  font-size: 35px;
 }
 
-h2 {
-  font-size: 62px;
-}
-
-h4 {
-  font-size: 22px;
-}
-
-p {
-  font-size: 28px;
-}
-
-.Img-div {
-  width: 80%;
+#text {
   display: flex;
   justify-content: center;
 }
 
-#img-tuf1 {
-  width: 40%;
+#apple {
+  border-radius: 50%;
+
+  width: 100px;
+  height: 100px;
+  background-image: url(https://www.pngplay.com/wp-content/uploads/3/IPhone-Apple-Logo-Transparent-File.png);
+  background-position: center;
+  background-size: 100%;
+  margin-top: 3px;
 }
 
-img {
-  width: 30%;
-  margin: auto;
+#full-block {
+  background-color: white;
 }
-
-#background-video {
-  object-fit: cover;
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: -1;
+.block {
+  background-image: url();
 }
-
-.img-div {
+#text-2 {
+  width: 100%;
+  height: 100%;
+  margin-top: 30px;
   display: flex;
-  justify-content: space-between;
-  margin: 100px 0;
-  padding: 0 100px;
-  width: 80%;
-  height: 90%;
+  justify-content: center;
 }
-
-img {
-  width: 500px;
-  height: 400px;
+.info {
+  margin-top: 40px;
 }
