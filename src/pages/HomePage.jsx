@@ -1,7 +1,9 @@
-import React from "react";
+import { Home } from "@mui/icons-material";
 
 const HomePage = () => {
-  return <div>Home</div>;
+  return (
+    Home
+  )
 };
 
 export default HomePage;

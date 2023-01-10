@@ -1,6 +1,8 @@
 import React from "react";
 import { Navigate, Route, Routes } from "react-router-dom";
 import AboutUs from "../components/AboutUs/AboutUs";
+import Cart from "../components/Cart/Cart";
+import PaymentForm from "../components/Cartt/Cartt";
 import { useAuth } from "../contexts/authContext";
 import { ADMIN } from "../helpers/consts";
 import AdminPage from "../pages/AdminPage";
@@ -52,11 +54,15 @@ const MainRoutes = () => {
       id: 7,
     },
     {
-      link: '/contacts',
+      link: "/contacts",
       element: <ContactsPage />,
-      id: 8
-    }
-  
+      id: 8,
+    },
+    {
+      link: "/cartt",
+      element: <PaymentForm />,
+      id: 9,
+    },
   ];
 
   const PRIVATE_ROUTES = [
