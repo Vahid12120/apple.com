@@ -186,11 +186,6 @@ export default function Navbar() {
           >
             Apple store
           </Typography>
-          <img
-            width={50}
-            src="https://dujio.com/wp-content/uploads/2019/01/Apple-White-Logo.png"
-          />
-
           {user.email == ADMIN ? (
             <Link
               style={{
