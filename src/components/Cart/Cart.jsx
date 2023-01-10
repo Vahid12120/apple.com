@@ -9,6 +9,7 @@ import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { useCart } from "../../contexts/cartContext";
 import { Button } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
   [`&.${tableCellClasses.head}`]: {
@@ -41,8 +42,12 @@ export default function Cart() {
     localStorage.removeItem("cart");
     getCart();
   };
+  const navigate = useNavigate()
+
+  
 
   return (
+    
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 700 }} aria-label="customized table">
         <TableHead>
@@ -89,12 +94,13 @@ export default function Cart() {
                 <Button onClick={() => deleteCartProduct(row.item.id)}>
                   DELETE
                 </Button>
+                <Button>bay</Button>
               </StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
       </Table>
-      <Button onClick={cartCleaner}>BUY NOW FOR {cart?.totalPrice} $</Button>
+      <Button onClick={()=> navigate('/cartt')} variant='outlined' >BUY NOW FOR {cart?.totalPrice} $</Button>
     </TableContainer>
   );
 }

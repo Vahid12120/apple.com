@@ -11,6 +11,7 @@ const App = () => {
       <ProductsContextProvider>
         <CartContextProvider>
           <Navbar />
+
           <MainRoutes />
         </CartContextProvider>
       </ProductsContextProvider>

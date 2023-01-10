@@ -31,7 +31,7 @@ const SideBar = () => {
   }, [search]);
 
   return (
-    <Grid item md={3}>
+    <Grid item md={4}>
       <Paper elevation={5} sx={{ p: 2 }}>
         <TextField
           fullWidth

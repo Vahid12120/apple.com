@@ -1,4 +1,5 @@
 import * as React from "react";
+import "./navbar.css"
 import { styled, alpha } from "@mui/material/styles";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -21,6 +22,7 @@ import { ADMIN } from "../../helpers/consts";
 import ShoppingBagIcon from "@mui/icons-material/ShoppingBag";
 import { useCart } from "../../contexts/cartContext";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
+import { DarkMode } from "@mui/icons-material";
 
 // const Search = styled("div")(({ theme }) => ({
 //   position: "relative",
@@ -49,7 +51,7 @@ import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
 // }));
 
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
+  color: "inherit", 
   "& .MuiInputBase-input": {
     padding: theme.spacing(1, 1, 1, 0),
 
@@ -62,10 +64,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-const pages = [
-  { name: "ABOUT US", link: "/about", id: 1 },
-  { name: "CONTACT US", link: "/contacts", id: 2 },
-  { name: "PRODUCTS", link: "/products", id: 3 },
+const pages =  [
+  { name: "О нас", link: "/about", id: 1 },
+  { name: "Наши контакты", link: "/contacts", id: 2 },
+  { name: "Продукты", link: "/products", id: 3 },
 ];
 
 export default function Navbar() {
@@ -136,23 +138,23 @@ export default function Navbar() {
       </MenuItem>
     </Menu>
   );
-
+  
   const mobileMenuId = "primary-search-account-menu-mobile";
   const renderMobileMenu = (
     <Menu
-      anchorEl={mobileMoreAnchorEl}
-      anchorOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      id={mobileMenuId}
-      keepMounted
-      transformOrigin={{
-        vertical: "top",
-        horizontal: "right",
-      }}
-      open={isMobileMenuOpen}
-      onClose={handleMobileMenuClose}
+    anchorEl={mobileMoreAnchorEl}
+    anchorOrigin={{
+      vertical: "top",
+      horizontal: "right",
+    }}
+    id={mobileMenuId}
+    keepMounted
+    transformOrigin={{
+      vertical: "top",
+      horizontal: "right",
+    }}
+    open={isMobileMenuOpen}
+    onClose={handleMobileMenuClose}
     >
       <MenuItem>
         <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -188,11 +190,13 @@ export default function Navbar() {
       </MenuItem>
     </Menu>
   );
+  
+   return (
 
-  return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
+      
           <IconButton
             size="large"
             edge="start"
@@ -203,6 +207,7 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography
+          
             variant="h6"
             noWrap
             component="div"
@@ -210,6 +215,8 @@ export default function Navbar() {
           >
             Apple store
           </Typography>
+          <img width={50} src="https://dujio.com/wp-content/uploads/2019/01/Apple-White-Logo.png"/>
+
           {/* <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -231,9 +238,10 @@ export default function Navbar() {
               <SupervisorAccountIcon />
             </Link>
           ) : null}
-          <Box sx={{ display: "flex", gap: "6px" }}>
+          <Box sx={{ flexGrow: 1 }} />
+          <Box className="nav-links" sx={{ display: "flex", gap: "6px" }}>
             {pages.map((item) => (
-              <Link to={item.link}>
+              <Link className="nav-links" to={item.link}>
                 <Typography sx={{ color: "white" }}>{item.name}</Typography>
               </Link>
             ))}
